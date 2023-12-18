@@ -1,10 +1,11 @@
 .logoContainer {
     width: 67px;
-    height: 47px;
+    height: 34px;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    /* justify-content: center; */
     flex-direction: column;
+    border: 1px solid red;
 }
 
 .logoIcon {
