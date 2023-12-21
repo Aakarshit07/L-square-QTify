@@ -3,16 +3,14 @@
     height: 34px;
     display: flex;
     align-items: flex-start;
-    /* justify-content: center; */
     flex-direction: column;
-    border: 1px solid red;
 }
 
-.logoIcon {
+/* .logoIcon {
     width: 24px;
-}
+} */
 
-.logoText {
+/* .logoText {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     font-size: 20px;
     font-weight: 600;
@@ -23,4 +21,4 @@
     margin-bottom: 3px;
     padding: 0px 0px 15px 5px;
     z-index: 1;
-}
+} */
