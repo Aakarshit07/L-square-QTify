@@ -1,7 +1,7 @@
 import styles from "./Search.module.css"
 import { ReactComponent as SearchIcon } from "../../assets/search-icon.svg";
 
-function Search({placeholder}) {
+function Search({placeholder, searchData}) {
     const onSubmit = (e) => {
         e.preventDefault();
 
