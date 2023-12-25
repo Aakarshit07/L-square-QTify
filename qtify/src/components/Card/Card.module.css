@@ -2,11 +2,6 @@
     width: 160px;
 }
 
-.link {
-    text-decoration: none;
-    color: var(--color-white);
-}
-
 .card {
     position: relative;
     width: 160px;

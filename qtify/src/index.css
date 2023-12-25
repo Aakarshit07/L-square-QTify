@@ -15,7 +15,7 @@
 html, 
 body {
   height: 100%;
-  overflow-x: hidden;
+
 }
 
 body {
@@ -24,6 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-black); 
   color: var(--color-white);
+  overflow-x: hidden;
 }
 
 img, 
@@ -51,7 +52,22 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+a,
+a:hover,
+a:focus,
+a:active,
+a::after,
+a::before {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
 #root,
 #__next {
   isolation: isolate;
+}
+
+.swiper-slide {
+  width: auto !important;
 }

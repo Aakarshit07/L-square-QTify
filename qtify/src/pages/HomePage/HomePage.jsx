@@ -10,8 +10,8 @@ function HomePage() {
         <>
             <HeroSection />
             <div className={styles.wrapper}>
-                <Section title="Top Alnums" data={topAlbums} type="album" />
-                <Section title="New Alnums" data={newAlbums} type="album" />
+                <Section title="Top Albums" data={topAlbums} type="album" />
+                <Section title="New Albums" data={newAlbums} type="album" />
                 
                 {/* <Section title="Songs" data={songs} type="songs" /> */}
             </div>
