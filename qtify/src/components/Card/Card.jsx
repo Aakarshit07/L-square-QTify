@@ -4,6 +4,8 @@ import Tooltip from '@mui/material/Tooltip';
 import { Link } from "react-router-dom";
 
 function Card({data, type}) {
+    // console.log("Card: Data",data)
+    // console.log("Card: type", type)
     const getCard = (type) => {
         switch (type) {
             case "album": {
@@ -32,8 +34,11 @@ function Card({data, type}) {
                     </Tooltip>
                 )
             }
-            case "song": {
+            case "songs": {
                 const { image, likes, title} = data
+                // console.log("Card->:Image ",image);
+                // console.log("Card->:likes ",likes)
+                // console.log("Card->:title ",title)
                 return (
                     <div className={styles.wrapper} >
                         <div className={styles.card}>

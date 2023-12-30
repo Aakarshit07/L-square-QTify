@@ -20,19 +20,21 @@ function App() {
   useEffect(() => {
       generateData("topAlbums", fetchTopAlbums)
       generateData("newAlbums", fetchNewAlbums)
-      // generateData("songs", fetchSongs)
+      generateData("songs", fetchSongs)
   }, []);
-  const {topAlbums = [], newAlbums = [], songs = [],} = data
-  console.log(topAlbums);
-  console.log(newAlbums);
+  const {topAlbums = [], newAlbums = [], songs = []} = data;
+    // console.log("topAlbums", topAlbums);
+    // console.log("newAlbums", newAlbums)
+    // console.log("songs", songs);
+   
   return (
     <>
       <StyledEngineProvider injectFirst >
-      <Navbar 
-        placeholder={"Search a album of your choice"} 
-        searchData={[...topAlbums,...newAlbums]}
-      />
-      <Outlet context={{ data: {topAlbums, newAlbums, songs}}}/>
+        <Navbar 
+          placeholder={"Search a album of your choice"} 
+          searchData={[...topAlbums,...newAlbums]}
+        />
+        <Outlet context={{ data: {topAlbums, newAlbums, songs}}}/>
       </StyledEngineProvider>
     </>
   );

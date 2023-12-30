@@ -16,6 +16,8 @@ function Carousel({data, renderComponent}) {
         return <></>
     }
 
+    // console.log("Carousel->:data ", data)
+    // console.log("Carousel->:renderComponent ", renderComponent);
 
     return (
         <div className={styles.wrapper}>
@@ -30,9 +32,10 @@ function Carousel({data, renderComponent}) {
                 <Controls data={data} />
                 <CarouselRightNavigation />
                 <CarouselLeftNavigation />
-                {data.map((ele, idx) => (
-                    <SwiperSlide key={idx} >{renderComponent(ele)}</SwiperSlide>
-                ))}
+                {data.map((ele) => {
+                    // console.log("Carousel->:renderComponent ", ele);
+                    return <SwiperSlide key={ele.id} >{renderComponent(ele)}</SwiperSlide>
+                })}
             </Swiper>
         </div>
     )
